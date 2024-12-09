@@ -25,3 +25,8 @@ Route::post('/logout', action: [AuthController::class, 'logout'])->name('logout'
 Route::get('/beranda', function () {
     return view('beranda');
 })->name('beranda')->middleware('auth');
+
+
+Route::get('/testing', function () {
+    return view('login');
+});
